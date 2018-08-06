@@ -1,15 +1,17 @@
 //Bubble Sort by Nicholas Tony Gomes
 #include<stdio.h>
+#include<time.h>
+
 int main(){
     int num,i,j,temp,k;
     printf("Enter Number of Data you want to enter\n");
     scanf("%d",&num);
     int dataSet[num];
-    for(k=0;k<=num;k++)
+    for(k=0;k<num;k++)
         scanf("%d",&dataSet[k]);
-    for(i=0;i<=num-1;i++)
+    for(i=0;i<num-1;i++)
     {
-        for(j=0;j<=num-1;j++)
+        for(j=0;j<num-1;j++)
         {
             if(dataSet[j]>dataSet[j+1])
             {
@@ -20,7 +22,7 @@ int main(){
         }
         
     }   
-    for(k=0;k<=num-1;k++)
+    for(k=0;k<num;k++)
         printf("%d\t",dataSet[k]); 
 
     return 0;
